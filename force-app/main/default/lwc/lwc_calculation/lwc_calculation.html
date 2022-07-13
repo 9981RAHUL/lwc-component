@@ -1,0 +1,28 @@
+<template>
+ <lightning-card title="Calculation with campre of 3 number" icon-name="statndar:account">
+            <lightning-input label="Enter first number" onchange={firstnumber} value={num1}></lightning-input>
+            <lightning-input label="Enter second number" onchange={secondnumber} value={num2}></lightning-input>
+            <lightning-input label="Enter third number" onchange={thirdnumber} value={num3}></lightning-input>
+
+
+            <lightning-button-group>
+                     <lightning-button label="calculation" onclick={calulatenumber}></lightning-button>
+                    <lightning-button label="clear" onclick={clearme}></lightning-button>
+            </lightning-button-group>
+ </lightning-card>
+
+
+ <lightning-card title="Calculation with campre of 3 number" icon-name="statndar:account">
+            <lightning-input label="Enter first number" onchange={captureData} value={num1} name="aval"> </lightning-input>
+            <lightning-input label="Enter second number" onchange={captureData} value={num2} name="bval"></lightning-input>
+            <lightning-input label="Enter third number" onchange={captureData} value={num3} name="cval"></lightning-input>
+    
+    
+            <lightning-button-group>
+                <lightning-button label="calculation2" onclick={calulatenumber}></lightning-button>
+                <lightning-button label="clear" onclick={clearme}></lightning-button>
+            </lightning-button-group>
+
+   </lightning-card>
+    
+</template>

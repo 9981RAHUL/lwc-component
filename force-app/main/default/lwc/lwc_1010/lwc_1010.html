@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="loop array">
+        <template for:each={cities} for:item=a>
+           {a};        
+        </template>
+========================loop 2================================
+
+        <template for:each={cities} for:item=a>
+           
+           will print array in one by one :  <p key={a}>{a}</p>
+         </template>
+    </lightning-card>
+========================loop 3=================================
+<template iterator:item={cities} >
+   
+<p key={item.value}>{item.value}</p>
+ </template>
+</template>

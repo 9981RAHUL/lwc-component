@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+	<aura:registerEvent name="childEvent" type="c:TestEvent"/>
+  <lightning:button
+       label="Fire Component Event"
+       onclick="{!c.fireNow}" />
+
+</aura:component>

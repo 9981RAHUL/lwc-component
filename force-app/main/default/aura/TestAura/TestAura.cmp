@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="ValueName" type="String" />
+  <aura:attribute name="PrntValue" type="String" />
+    <aura:handler name="childEvent" event="c:TestEvent" action="{!c.handleCE}"/> 
+    <lightning:input type="text" label="Enter some text" value="{!v.ValueName}"></lightning:input>
+    
+    <button name="Test" onclick="{!c.ControllerMethod}">clickMe</button>
+    <c:ChilComp/>
+    <div>{!v.PrntValue}</div>
+</aura:component>

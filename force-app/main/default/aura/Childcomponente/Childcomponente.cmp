@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="ParentAction" type="Aura.Action" />
+    <aura:attribute name="valueForParent" type="string" default="child value for parent" />
+    
+    <p>
+        Child component
+    </p>
+    <ui:button label="call Parent Method" press="{!v.ParentAction}" />
+     
+	
+</aura:component>
